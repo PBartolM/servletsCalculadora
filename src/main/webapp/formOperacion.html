@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones a Realizar</title>
+</head>
+<body>
+<h1>Operaciones a Realizar...</h1>
+<br>
+<br>
+<form action="ServletCalculadora" method="post">
+    <select name="operador" id="operador">
+        <option value="+">Suma</option>
+        <option value="-">Resta</option>
+        <option value="*">Producto</option>
+        <option value="/">División</option>
+    </select><br>
+    <label for="pnum">Primer numero:</label>
+    <input type="number" id="pnum" name="pnum" value="0">
+    <label for="snum">Segundo numero:</label>
+    <input type="number" id="snum" name="snum" value="0"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+
+</body>
+</html>
