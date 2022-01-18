@@ -109,8 +109,15 @@ public class GestorOperador {
                 res=ope1*ope2;
                 break;
             case '/':
-                res=ope1/ope2;
+                if (ope2!=0) {
+                    res = ope1 / ope2;
+
+                }else{
+                    return "Division por zero";
+                }
                 break;
+            default:
+                return "Operacion no implementada";
         }
         String rdo= Double.toString(res);
 
